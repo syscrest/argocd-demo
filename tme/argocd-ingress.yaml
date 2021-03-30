@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+  name: argocd
+  namespace: argocd
+spec:
+  rules:
+  - host: 'argocd.sc-k8s-playground.datadrill.de'
+    http:
+      paths:
+      - backend:
+          serviceName: argocd-server
+          servicePort: 8080
+        path: /
+      - backend:
+          serviceName: argocd-server
+          servicePort: 80
+        path: /*

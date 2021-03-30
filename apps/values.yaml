@@ -6,4 +6,4 @@ spec:
     repoURL: https://github.com/syscrest/argocd-demo
     targetRevision: HEAD
 
-environment: dev
+environment: production
