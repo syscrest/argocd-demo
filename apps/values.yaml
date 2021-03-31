@@ -4,6 +4,6 @@ spec:
   source:
     path: charts/guestbook
     repoURL: https://github.com/syscrest/argocd-demo
-    targetRevision: HEAD
+    targetRevision: dummy
 
 environment: production
